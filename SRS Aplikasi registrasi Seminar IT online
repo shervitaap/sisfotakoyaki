@@ -1,0 +1,206 @@
+
+SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK
+Aplikasi Registrasi Seminar IT Online
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Disusun oleh:
+Shervita Amalia Putri (113100027)
+Taufiqur Rahman Aziz (113100014)
+Yunita Yesi Damaryanti (113100006)
+
+IF-34-01
+
+
+
+
+
+
+
+
+
+DAFTAR ISI
+Halaman judul ..................................................................................................................... i
+Daftar isi .............................................................................................................................. ii
+1.  Pendahuluan ................................................................................................................. 1
+1.1.	 Tujuan .................................................................................................................... 1
+1.2.	 Cakupan Produk ..................................................................................................... 1
+1.3.	 Definisi, Akronim, dan Singkatan ......................................................................... 1
+2.	Deskripsi Umum .......................................................................................................... 2
+2.1.	Perpektif Produk ..................................................................................................... 2
+2.2.	 Fungsi Produk ........................................................................................................ 3
+2.3.	 Karakteristik User .................................................................................................. 3
+2.4.	 Asumsi dan Ketergantungan .................................................................................. 3
+2.5.	 Lingkup dan Operasi .............................................................................................. 4
+3.	Persyaratan Khusus ...................................................................................................... 4
+3.1.	 Persyaratan Interface Eksternal .............................................................................. 4
+3.1.1.	User Interface .............................................................................................. 4
+3.1.2.	Interface Perangkat Keras ............................................................................ 4
+3.1.3.	Interface Perangkat Lunak ........................................................................... 4
+3.1.4.	Interface Untuk Berkomunikasi ................................................................... 4
+3.2.	 Persyaratan Fungsional ........................................................................................... 5
+3.2.1.	Fungsi Login ................................................................................................ 5
+3.2.2.	Fungsi Registrasi ......................................................................................... 5
+3.2.3.	Fungsi Validasi Pembayaran ....................................................................... 5
+3.2.4.	Fungsi Konfirmasi Pembayaran .................................................................. 5
+3.2.5.	Fungsi Pencetakan Kartu Peserta ................................................................ 6
+3.2.6.	Fungsi Logout ............................................................................................. 6
+3.3.	 Persyaratan Performa ............................................................................................. 6
+3.4.	 Persyaratan Non Fungsional .................................................................................. 6
+3.4.1.	Ability ......................................................................................................... 6
+3.4.2.	Consistency ................................................................................................. 6
+3.4.3.	Accessibility ............................................................................................... 6
+3.4.4.	Familiarity .................................................................................................. 6
+3.4.5.	Availability ................................................................................................. 6
+3.4.6.	Security ....................................................................................................... 6
+3.4.7.	Portability .................................................................................................... 6
+3.4.8.	Response Time ............................................................................................ 6
+ 
+1.	Pendahuluan
+1.1.	 Tujuan
+a.	Memudahkan user untuk mencari informasi terkait seminar IT yang diadakan di Bandung.
+b.	Memudahkan penyelenggara seminar dalam memasarkan kegiatannya.
+c.	Memudahkan dalam pengelolaan database peserta.
+d.	Menjangkau peserta dari kawasan yang lebih jauh.
+
+1.2.	 Cakupan Produk
+Proyek aplikasi Registrasi seminar IT online ini mencakup seluruh registrasi oleh peserta dari seluruh Indonesia dan diadakan di Bandung. Seminar IT ini  merupakan kegiatan yang berhubungan dengan bidang IT yang sedang berkembang dan banyak diminati oleh semua kalangan. Proyek ini dibuat agar memudahkan peserta mendaftar dari daerah asalnya dan datang ke lokasi seminar hanya untuk registrasi ulang saja.
+
+ 
+     Manual							  	Otomatisasi
+
+1.3.	Definisi, Akronim, dan Singkatan
+a.	Validasi : penyetujuan suatu hal oleh seseorang/badan yang memiliki otoritas (kewenangan).
+b.	Database : kumpulan data yang memiliki nilai tertentu dan dapat diakses sewaktu-waktu.
+c.	Hardware : perangkat keras komputer.
+d.	Local Network : jaringan komputer yang terbatas pada suatu wilayah kecil tertentu.
+e.	Progress : presentase terselesaikannya suatu kegiatan.
+f.	Software : perangkat lunak komputer.
+g.	Update : proses pemutakhiran data.
+h.	User : pengguna suatu benda.
+
+2.	Deskripsi Umum
+2.1. Perspektif Produk
+Berikut ini adalah diagram penggunaan aplikasi registrasi seminar IT online :
+
+CALON PESERTA			SISTEM			PANITIA
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.2. Fungsi Produk
+Aplikasi ini akan menjembatani interaksi antar panitia dan pendaftar seminar. Kegiatan-kegiatan yang dijembatani antara lain penginputan data, konfirmasi pembayaran, dan komunikasi antara kedua belah pihak. Aplikasi ini mencakup beberapa fungsi, meliputi:
+a.	Login
+b.	Registrasi
+c.	Validasi pembayaran
+d.	Konfirmasi pembayaran
+e.	Pencetakan kartu peserta
+f.	Logout
+Fungsi-fungsi ini akan dijelaskan lebih lanjut pada bagian 3.2 pada dokumen ini
+
+2.3.  Karakteristik User
+User dari aplikasi ini dapat digolongkan menjadi dua jenis, yaitu : user admin (panitia seminar)  dan main user (peserta pendaftar seminar). User dianjurkan mengerti cara menggunakan web browser dan mengisi form secara baik. Kami disini berusaha agar semua user dapat menggunakan aplikasi ini. Ada user yang familiar dengan pengisian form secara online, ada juga yang belum pernah sama sekali. Maka dari itu, sebisa mungkin kami memberikan kemudahan kepada masyarakat yang awam terhadap pengisian form secara online, agar seminar kami dapat menjangkau seluruh peserta yang ada di Indonesia.
+
+2.4.  Asumsi dan Ketergantungan
+User diharapkan sudah mengerti cara menggunakan web browser. Sebab aplikasi ini pastinya akan berjalan di browser seperti internet explore, mozilla firefox atau google chrome. Lalu user juga harus dapat mengisi form-form yang harus diisi secara baik.
+Lalu dari pihak admin sendiri, diharapkan adalah user yang mengerti alur registrasi, dan dapat bertanggung jawab terhadap keberhasilan peserta dalam melaksanakan proses registrasi.
+
+
+2.5.  Lingkup dan Operasi
+Aplikasi ini dapat digunakan jika ada akses internet.Dapat dijalankan di OS manapun, asalkan komputer user memiliki software web browser.Kualifikasi hardware yang digunakan tidak perlu yang hi-tech, sebab seperti yang sudah dibilang diawal, bahwa yang terpenting user harus memiliki akses internet untuk menggunakan aplikasi ini.
+
+
+Operating System	Windows/ Linux/ Mac OS (Cross platform)
+Processor	Pentium 4, 1,2 GHz or higher
+Hard disk	120 Gigabyte or higher
+RAM	256 Megabyte or higher
+Software	Chrome, Firefox, Opera or other browser
+
+
+
+3.	Persyaratan Khusus
+3.1.   Persyaratan Interface Eksternal.
+3.1.1.	User Interface
+User Interface dirancang menggunakan HTML dan CSS. Kami disini berusaha agar semua user dapat memakai aplikasi ini. Ada user yang familiar dengan pengisian form secara online, ada juga yang belum pernah sama sekali. Maka dari itu, sebisa mungkin kami memberikan kemudahan kepada masyarakat yang awam terhadap pengisian form secara online, agar seminar kami dapat menjangkau seluruh peserta yang ada di Indonesia.
+3.1.2.	Interface Perangkat Keras 
+Perangkat keras yang digunakan harus memiliki kemampuan untuk mengakses web browser seperti PC, notebook, Handphone, tablet,dll.
+3.1.3.	Interface Perangkat Lunak
+Interface dengan database system dan database seminar akan dijelaskan pada DOKUMEN selanjutnya.
+3.1.4.	Interface untuk Berkomunikasi
+Tidak diterapkan pada sistem ini.
+
+
+3.2.	Persyaratan Fungsional
+3.2.1.   Fungsi Login
+User akan diminta untuk memasukkan username dan password. Apabila user belum terdaftar maka harus melakukan pendaftaran terlebih dahulu melalui sign up dengan memasukkan data diri secara lengkap pada form yang tersedia, Kemudian baru bisa login. Pada saat username dan password telah dimasukkan maka sistem akan melakukan beberapa validasi, yaitu:
+•	Validasi username dan password
+Dilakukan untuk memvalidasi username dan password dengan database yang ada pada sistem. Jika username yang dimasukkan tidak terdapat dalam database sistem maka aplikasi ini tidak dapat diakses untuk proses selanjutnya, hanya bisa melihat home saja,  sama halnya jika username dan password yang dimasukkan tidak sesuai dengan yang ada di database sistem. 
+3.2.2.   Fungsi Registrasi
+    Untuk username yang telah divalidasi oleh sistem, maka user dapat melakukan proses selanjutnya yaitu membaca syarat dan ketentuan yang berlaku. Proses selanjutnya adalah registrasi sebagai peserta seminar yaitu dengan mengisikan data seperti : nama, foto, tempat dan tanggal lahir, alamat, asal sekolah/universitas, no hp, email, facebook, twitter dan biografi. Setelah data diisikan maka sistem akan memproses dan menyimpan data tersebut ke dalam database sistem, dan sistem akan mengembalikan proses selanjutnya yaitu pembayaran melalui ATM,  internet banking, dll.  
+3.2.3.   Fungsi validasi pembayaran
+    System akan menerima inputan dari user berupa scan/ bukti  pembayaran yang telah dilakukan.
+3.2.4.   Fungsi konfirmasi pembayaran 
+  Di sini admin melakukan pengecekan terhadap bukti pembayaran. Apabila bukti pembayaran valid, maka sistem akan merubah status menjadi OK dan muncul button untuk cetak kartu peserta. Jika bukti pembayaran tidak valid, maka sistem akan kembali ke fungsi validasi pembayaran. Apabila inputan bukti pembayaran 3x dinyatakan tidak valid oleh admin, maka secara otomatis data peserta yang bersangkutan terhapus dari database sistem.
+3.2.5.    Fungsi Pencetakan Kartu Peserta
+Apabila button “cetak kartu” ditekan, maka akan muncul kartu peserta yang berisi judul seminar yang diikuti, nama peserta, nomor peserta, lokasi seminar, tanggal seminar, waktu seminar, dan foto peserta.
+
+3.2.6.   Fungsi Logout
+    Apabila telah menyelesaikan proses atau user  ingin keluar dari sistem, maka disediakan fungsi logout untuk menjamin keamanan data user.
+
+   3.3.   Persyaratan Performa
+Sistem ini tetap dapat bekerja dalam kondisi cuaca yang buruk sekalipun (misalnya: pada suhu yang terlalu panas atau terlalu dingin) apabila masih terhubung dengan koneksi internet, kecuali jika jaringan internetnya mengalami gangguan.
+
+3.4.	Persyaratan Nonfungsional
+3.4.1.    Ability 
+Sistem ini bekerja 24 jam tiap hari. 7 hari dalam seminggu.
+3.4.2.    Consistency
+Sistem ini konsisten didalam penggunaan bahasanya, tampilan, warna background dan tulisan, tata letak button, dan fontnya.
+3.4.3.    Accessibility
+Sistem ini mudah diakses oleh semua jenis user.
+3.4.4.    Familiarity
+Sistem ini menggunakan bahasa , tampilan, dan aksi yang tidak asing bagi user.
+3.4.5.    Availability
+Sistem ini dapat digunakan selama 24 jam nonstop (selama tidak ada kerusakan-kerusakan tertentu).
+3.4.6.    Security
+Di dalam aplikasi ini terdapat fitur login (manajemen user) untuk menjaga kerahasiaan informasi dari orang-orang yang tidak berkepentingan.
+3.4.7.    Portability
+Aplikasi ini dapat berjalan dengan baik pada sistem operasi Windows, Linux, dan Mac OS.
+
+3.4.8.     Response Time
+ Response time yang ditolerir dalam sistem ini adalah 4-5 detik.
+   3.4.9.   Hardware requirements 
+Untuk mengoperasikan aplikasi ini diperlukan seperangkat PC (Personal Computer) yang terhubung dengan INTERNET.
+
